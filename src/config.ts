@@ -13,5 +13,16 @@ function requireEnv(name: string): string {
 export const config = {
   rpcUrl: requireEnv("RPC_URL"),
   privateKey: requireEnv("PRIVATE_KEY"),
-  pollInterval: parseInt(process.env.POLL_INTERVAL || "10000", 10)
+export const config = {
+  rpcUrl: requireEnv("RPC_URL"),
+  privateKey: requireEnv("PRIVATE_KEY"),
+  pollInterval: (() => {
+    const raw = process.env.POLL_INTERVAL ?? "10000";
+    const value = Number.parseInt(raw, 10);
+    if (!Number.isFinite(value) || value <= 0) {
+      throw new Error("POLL_INTERVAL must be a positive integer in milliseconds");
+    }
+    return value;
+  })()
+};
 };
