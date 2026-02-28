@@ -3,8 +3,8 @@
 
 <!-- Organization Logo -->
 <div align="center" style="display: flex; align-items: center; justify-content: center; gap: 16px;">
-  <img alt="AOSSIE" src="public/aossie-logo.svg" width="175">
-  <img src="public/todo-project-logo.svg" width="175" />
+  <img alt="Stability Nexus" src="public/stability.svg" width="175">
+  <img src="public/aossie-logo.svg" width="175" />
 </div>
 
 &nbsp;
@@ -12,269 +12,198 @@
 <!-- Organization Name -->
 <div align="center">
 
-[![Static Badge](https://img.shields.io/badge/aossie.org/TODO-228B22?style=for-the-badge&labelColor=FFC517)](https://TODO.aossie.org/)
-
-<!-- Correct deployed url to be added -->
+[![Static Badge](https://img.shields.io/badge/Stability_Nexus-Keepers-228B22?style=for-the-badge&labelColor=FFC517)](https://stability.nexus/)
 
 </div>
 
 <!-- Organization/Project Social Handles -->
 <p align="center">
-<!-- Telegram -->
 <a href="https://t.me/StabilityNexus">
 <img src="https://img.shields.io/badge/Telegram-black?style=flat&logo=telegram&logoColor=white&logoSize=auto&color=24A1DE" alt="Telegram Badge"/></a>
 &nbsp;&nbsp;
-<!-- X (formerly Twitter) -->
-<a href="https://x.com/aossie_org">
-<img src="https://img.shields.io/twitter/follow/aossie_org" alt="X (formerly Twitter) Badge"/></a>
+<a href="https://x.com/StabilityNexus">
+<img src="https://img.shields.io/twitter/follow/StabilityNexus" alt="X Badge"/></a>
 &nbsp;&nbsp;
-<!-- Discord -->
-<a href="https://discord.gg/hjUhu33uAn">
-<img src="https://img.shields.io/discord/1022871757289422898?style=flat&logo=discord&logoColor=white&logoSize=auto&label=Discord&labelColor=5865F2&color=57F287" alt="Discord Badge"/></a>
+<a href="https://discord.gg/YzDKeEfWtS">
+<img src="https://img.shields.io/discord/995968619034984528?style=flat&logo=discord&logoColor=white&logoSize=auto&label=Discord&labelColor=5865F2&color=57F287" alt="Discord Badge"/></a>
 &nbsp;&nbsp;
-<!-- Medium -->
 <a href="https://news.stability.nexus/">
   <img src="https://img.shields.io/badge/Medium-black?style=flat&logo=medium&logoColor=black&logoSize=auto&color=white" alt="Medium Badge"></a>
-&nbsp;&nbsp;
-<!-- LinkedIn -->
-<a href="https://www.linkedin.com/company/aossie/">
-  <img src="https://img.shields.io/badge/LinkedIn-black?style=flat&logo=LinkedIn&logoColor=white&logoSize=auto&color=0A66C2" alt="LinkedIn Badge"></a>
-&nbsp;&nbsp;
-<!-- Youtube -->
-<a href="https://www.youtube.com/@AOSSIE-Org">
-  <img src="https://img.shields.io/youtube/channel/subscribers/UCKVVLbawY7Gej_3o2WKsoiA?style=flat&logo=youtube&logoColor=white%20&logoSize=auto&labelColor=FF0000&color=FF0000" alt="Youtube Badge"></a>
 </p>
 
 ---
 
 <div align="center">
-<h1>TODO: Project Name</h1>
+<h1>EVM Keeper Template</h1>
 </div>
 
-[TODO](https://TODO.stability.nexus/) is a ... TODO: Project Description.
+This repository is the official template for building EVM keepers: long-running workers that monitor smart-contract state and execute maintenance transactions safely.
+
+Use this before adding protocol-specific logic. The template gives you a production-ready baseline for runtime behavior, strategy isolation, testing, and CI/CD.
 
 ---
 
-## 🚀 Features
+## What This Template Includes
 
-TODO: List your main features here:
-
-- **Feature 1**: Description
-- **Feature 2**: Description
-- **Feature 3**: Description
-- **Feature 4**: Description
-
----
-
-## 💻 Tech Stack
-
-TODO: Update based on your project
-
-### Frontend
-- React / Next.js / Flutter / React Native
-- TypeScript
-- TailwindCSS
-
-### Backend
-- Flask / FastAPI / Node.js / Supabase
-- Database: PostgreSQL / SQLite / MongoDB
-
-### AI/ML (if applicable)
-- LangChain / LangGraph / LlamaIndex
-- Google Gemini / OpenAI / Anthropic Claude
-- Vector Database: Weaviate / Pinecone / Chroma
-- RAG / Prompt Engineering / Agent Frameworks
-
-### Blockchain (if applicable)
-- Solidity / solana / cardano / ergo Smart Contracts
-- Hardhat / Truffle / foundry
-- Web3.js / Ethers.js / Wagmi
-- OpenZeppelin / alchemy / Infura
+- Strategy-based keeper runtime in `src/` (protocol-agnostic core + pluggable strategies)
+- Strict environment parsing with safe defaults (`src/config.js`)
+- Graceful shutdown and cycle-level failure isolation (`src/keeper-runner.js`)
+- Dry-run mode and max-actions safety caps
+- Starter strategies:
+  - `noop` for smoke checks
+  - `contract-task-template` for real on-chain work
+- Basic unit tests with Node test runner (`test/`)
+- GitHub workflows for CI, security checks, and release artifacts
 
 ---
 
-## ✅ Project Checklist
+## Repository Layout
 
-TODO: Complete applicable items based on your project type
-
-- [ ] **The protocol** (if applicable):
-   - [ ] has been described and formally specified in a paper.
-   - [ ] has had its main properties mathematically proven.
-   - [ ] has been formally verified.
-- [ ] **The smart contracts** (if applicable):
-   - [ ] were thoroughly reviewed by at least two knights of The Stable Order.
-   - [ ] were deployed to: [Add deployment details]
-- [ ] **The mobile app** (if applicable):
-   - [ ] has an _About_ page containing the Stability Nexus's logo and pointing to the social media accounts of the Stability Nexus.
-   - [ ] is available for download as a release in this repo.
-   - [ ] is available in the relevant app stores.
-- [ ] **The AI/ML components** (if applicable):
-   - [ ] LLM/model selection and configuration are documented.
-   - [ ] Prompts and system instructions are version-controlled.
-   - [ ] Content safety and moderation mechanisms are implemented.
-   - [ ] API keys and rate limits are properly managed.
-
----
-
-## 🔗 Repository Links
-
-TODO: Update with your repository structure
-
-1. [Main Repository](https://github.com/AOSSIE-Org/TODO)
-2. [Frontend](https://github.com/AOSSIE-Org/TODO/tree/main/frontend) (if separate)
-3. [Backend](https://github.com/AOSSIE-Org/TODO/tree/main/backend) (if separate)
-
----
-
-## 🏗️ Architecture Diagram
-
-TODO: Add your system architecture diagram here
-
-```
-[Architecture Diagram Placeholder]
+```text
+.
+├── src/
+│   ├── index.js
+│   ├── config.js
+│   ├── keeper-runner.js
+│   ├── logger.js
+│   └── strategies/
+│       ├── index.js
+│       ├── noop.strategy.js
+│       └── contract-task.strategy.js
+├── test/
+├── .env.example
+└── .github/workflows/
 ```
 
-You can create architecture diagrams using:
-- [Draw.io](https://draw.io)
-- [Excalidraw](https://excalidraw.com)
-- [Lucidchart](https://lucidchart.com)
-- [Mermaid](https://mermaid.js.org) (for code-based diagrams)
-
-Example structure to include:
-- Frontend components
-- Backend services
-- Database architecture
-- External APIs/services
-- Data flow between components
-
 ---
 
-## 🔄 User Flow
-
-TODO: Add user flow diagrams showing how users interact with your application
-
-```
-[User Flow Diagram Placeholder]
-```
-
-### Key User Journeys
-
-TODO: Document main user flows:
-
-1. **User Journey 1**: Description
-   - Step 1
-   - Step 2
-   - Step 3
-
-2. **User Journey 2**: Description
-   - Step 1
-   - Step 2
-   - Step 3
-
-3. **User Journey 3**: Description
-   - Step 1
-   - Step 2
-   - Step 3
-
----
-
-## �🍀 Getting Started
+## Getting Started
 
 ### Prerequisites
 
-TODO: List what developers need installed
+- Node.js 20+
+- npm 10+
+- RPC endpoint for your target EVM network
+- Keeper wallet funded with native gas token
 
-- Node.js 18+ / Python 3.9+ / Flutter SDK
-- npm / yarn / pnpm
-- [Any specific tools or accounts needed]
-
-### Installation
-
-TODO: Provide detailed setup instructions
-
-#### 1. Clone the Repository
+### 1. Install Dependencies
 
 ```bash
-git clone https://github.com/AOSSIE-Org/TODO.git
-cd TODO
+npm ci
 ```
 
-#### 2. Install Dependencies
+### 2. Create Environment File
 
 ```bash
-npm install
-# or
-yarn install
-# or
-pnpm install
+cp .env.example .env
 ```
 
-#### 3. Configure Environment Variables(.env.example)
-
-Create a `.env` file in the root directory:
+Then set your RPC endpoint in `.env`:
 
 ```env
-# Add your environment variables here
-API_KEY=your_api_key
-DATABASE_URL=your_database_url
+RPC_URL=https://mainnet.base.org
 ```
 
-#### 4. Run the Development Server
+### 3. Select Strategy
+
+Default strategy is `noop` (safe, no transactions).
+
+To build a real keeper:
+
+1. Edit `src/strategies/contract-task.strategy.js`
+2. Replace template ABI
+3. Implement:
+   - `getWorkItems(...)`
+   - `executeWorkItem(...)`
+4. Set `KEEPER_STRATEGY=contract-task-template` in `.env`
+
+### 4. Run
 
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
+# one cycle only
+npm run start:once
+
+# continuous loop
+npm run start
+
+# no transactions, log-only execution
+npm run start:dry-run
 ```
 
-#### 5. Open your Browser
+---
 
-Navigate to [http://localhost:3000](http://localhost:3000) to see the application.
+## Environment Variables
 
-For detailed setup instructions, please refer to our [Installation Guide](./docs/INSTALL_GUIDE.md) (if you have one).
+| Variable | Required | Description |
+| --- | --- | --- |
+| `KEEPER_STRATEGY` | No | Strategy key (`noop` or `contract-task-template`) |
+| `RPC_URL` | Yes | EVM JSON-RPC endpoint |
+| `EXPECTED_CHAIN_ID` | No | Safety check against wrong network |
+| `PRIVATE_KEY` | For tx strategies | Keeper signer private key |
+| `CONTRACT_ADDRESS` | For contract strategies | Target contract address |
+| `TX_CONFIRMATIONS` | No | Required confirmations per transaction (default `1`) |
+| `MAX_ACTIONS_PER_CYCLE` | No | Per-cycle execution cap (default `25`) |
+| `KEEPER_INTERVAL_MS` | No | Poll interval in milliseconds (default `15000`) |
+| `DRY_RUN` | No | `true` to skip tx submission |
+| `LOG_LEVEL` | No | `debug`, `info`, `warn`, `error` |
 
 ---
 
-## 📱 App Screenshots
+## Public Free RPC Endpoints
 
-TODO: Add screenshots showcasing your application
+Use these public endpoints as starter options for local development and testing. For production keepers, use your own provider with SLA and monitoring.
 
-|  |  |  |
-|---|---|---|
-| Screenshot 1 | Screenshot 2 | Screenshot 3 |
-
----
-
-## 🙌 Contributing
-
-⭐ Don't forget to star this repository if you find it useful! ⭐
-
-Thank you for considering contributing to this project! Contributions are highly appreciated and welcomed. To ensure smooth collaboration, please refer to our [Contribution Guidelines](./CONTRIBUTING.md).
+| Network | Chain ID | Public RPC |
+| --- | --- | --- |
+| Base Mainnet | `8453` | `https://mainnet.base.org` |
+| Base Sepolia | `84532` | `https://sepolia.base.org` |
+| BNB Smart Chain Mainnet | `56` | `https://bsc-dataseed.bnbchain.org` |
+| BNB Smart Chain Testnet | `97` | `https://bsc-testnet-dataseed.bnbchain.org` |
+| Polygon PoS Mainnet | `137` | `https://polygon-bor-rpc.publicnode.com` |
+| Polygon Amoy | `80002` | `https://polygon-amoy-bor-rpc.publicnode.com` |
 
 ---
 
-## ✨ Maintainers
+## Keeper Design Guidelines
 
-TODO: Add maintainer information
+When adapting this template for a project keeper:
 
-- [Maintainer Name](https://github.com/username)
-- [Maintainer Name](https://github.com/username)
-
----
-
-## 📍 License
-
-This project is licensed under the GNU General Public License v3.0.
-See the [LICENSE](LICENSE) file for details.
+1. Keep the runner generic. Put protocol logic only inside strategy modules.
+2. Make `getWorkItems()` deterministic and cheap (view calls only).
+3. Make `executeWorkItem()` idempotent when possible.
+4. Keep `MAX_ACTIONS_PER_CYCLE` conservative to avoid gas spikes.
+5. Add tests for selection logic and failure paths before shipping.
+6. Start with `DRY_RUN=true` in staging or testnet.
 
 ---
 
-## 💪 Thanks To All Contributors
+## CI and Automation
 
-Thanks a lot for spending your time helping TODO grow. Keep rocking 🥂
+The template includes:
 
-[![Contributors](https://contrib.rocks/image?repo=AOSSIE-Org/TODO)](https://github.com/AOSSIE-Org/TODO/graphs/contributors)
+- `ci.yml`: install + test on pushes and PRs
+- `security-audit.yml`: dependency review and npm audit
+- `release-artifacts.yml`: tag-based artifact packaging
 
-© 2025 AOSSIE 
+---
+
+## Versioning
+
+- Use semantic versioning in `VERSION`
+- Create tags like `v1.2.3` for release artifact publishing
+
+---
+
+## Contributing
+
+Please read [CONTRIBUTING.md](./CONTRIBUTING.md) before opening a PR.
+
+---
+
+## License
+
+This project is licensed under GNU GPL v3.0. See [LICENSE](LICENSE).
+
+---
+
+© 2026 The Stable Order.
