@@ -1,10 +1,10 @@
-<!-- Don't delete it -->
+﻿<!-- Don't delete it -->
 <div name="readme-top"></div>
 
 <!-- Organization Logo -->
 <div align="center" style="display: flex; align-items: center; justify-content: center; gap: 16px;">
-  <img alt="Stability Nexus" src="public/stability.svg" width="175">
-  <img src="public/aossie-logo.svg" width="175" />
+  <img alt="AOSSIE" src="public/aossie-logo.svg" width="175">
+  <img src="public/todo-project-logo.svg" width="175" />
 </div>
 
 &nbsp;
@@ -12,68 +12,153 @@
 <!-- Organization Name -->
 <div align="center">
 
-[![Static Badge](https://img.shields.io/badge/Stability_Nexus-Keepers-228B22?style=for-the-badge&labelColor=FFC517)](https://stability.nexus/)
+[![Static Badge](https://img.shields.io/badge/aossie.org/TODO-228B22?style=for-the-badge&labelColor=FFC517)](https://TODO.aossie.org/)
+
+<!-- Correct deployed url to be added -->
 
 </div>
 
 <!-- Organization/Project Social Handles -->
 <p align="center">
+<!-- Telegram -->
 <a href="https://t.me/StabilityNexus">
 <img src="https://img.shields.io/badge/Telegram-black?style=flat&logo=telegram&logoColor=white&logoSize=auto&color=24A1DE" alt="Telegram Badge"/></a>
 &nbsp;&nbsp;
-<a href="https://x.com/StabilityNexus">
-<img src="https://img.shields.io/twitter/follow/StabilityNexus" alt="X Badge"/></a>
+<!-- X (formerly Twitter) -->
+<a href="https://x.com/aossie_org">
+<img src="https://img.shields.io/twitter/follow/aossie_org" alt="X (formerly Twitter) Badge"/></a>
 &nbsp;&nbsp;
-<a href="https://discord.gg/YzDKeEfWtS">
-<img src="https://img.shields.io/discord/995968619034984528?style=flat&logo=discord&logoColor=white&logoSize=auto&label=Discord&labelColor=5865F2&color=57F287" alt="Discord Badge"/></a>
+<!-- Discord -->
+<a href="https://discord.gg/hjUhu33uAn">
+<img src="https://img.shields.io/discord/1022871757289422898?style=flat&logo=discord&logoColor=white&logoSize=auto&label=Discord&labelColor=5865F2&color=57F287" alt="Discord Badge"/></a>
 &nbsp;&nbsp;
+<!-- Medium -->
 <a href="https://news.stability.nexus/">
   <img src="https://img.shields.io/badge/Medium-black?style=flat&logo=medium&logoColor=black&logoSize=auto&color=white" alt="Medium Badge"></a>
+&nbsp;&nbsp;
+<!-- LinkedIn -->
+<a href="https://www.linkedin.com/company/aossie/">
+  <img src="https://img.shields.io/badge/LinkedIn-black?style=flat&logo=LinkedIn&logoColor=white&logoSize=auto&color=0A66C2" alt="LinkedIn Badge"></a>
+&nbsp;&nbsp;
+<!-- Youtube -->
+<a href="https://www.youtube.com/@AOSSIE-Org">
+  <img src="https://img.shields.io/youtube/channel/subscribers/UCKVVLbawY7Gej_3o2WKsoiA?style=flat&logo=youtube&logoColor=white%20&logoSize=auto&labelColor=FF0000&color=FF0000" alt="Youtube Badge"></a>
 </p>
 
 ---
 
 <div align="center">
-<h1>EVM Keeper Template</h1>
+<h1>Windmill EVM Keeper Template</h1>
 </div>
 
-This repository is the official template for building EVM keepers: long-running workers that monitor smart-contract state and execute maintenance transactions safely.
-
-Use this before adding protocol-specific logic. The template gives you a production-ready baseline for runtime behavior, strategy isolation, testing, and CI/CD.
+[Windmill EVM Keeper Template](https://TODO.stability.nexus/) is a reusable Node.js template for building EVM keeper bots that monitor protocol state and execute automated maintenance transactions safely.
 
 ---
 
-## What This Template Includes
+## Features
 
-- Strategy-based keeper runtime in `src/` (protocol-agnostic core + pluggable strategies)
-- Strict environment parsing with safe defaults (`src/config.js`)
-- Graceful shutdown and cycle-level failure isolation (`src/keeper-runner.js`)
-- Dry-run mode and max-actions safety caps
-- Starter strategies:
-  - `noop` for smoke checks
-  - `contract-task-template` for real on-chain work
-- Basic unit tests with Node test runner (`test/`)
-- GitHub workflows for CI, security checks, and release artifacts
+- **Strategy-based keeper core**: Keep protocol-specific logic isolated in `src/strategies/`.
+- **Safe execution controls**: `DRY_RUN`, `MAX_ACTIONS_PER_CYCLE`, `EXPECTED_CHAIN_ID`, and confirmation controls.
+- **Production-friendly runtime**: Graceful loop execution, robust error handling, and structured logs.
+- **CI-ready template**: Unit tests, CI workflow, security audit workflow, and release artifact workflow included.
 
 ---
 
-## Repository Layout
+## Tech Stack
+
+### Frontend
+- N/A (headless keeper service)
+
+### Backend
+- Node.js 20+
+- JavaScript (ESM)
+- Ethers.js v6
+- dotenv
+
+### AI/ML (if applicable)
+- N/A
+
+### Blockchain (if applicable)
+- EVM-compatible networks
+- JSON-RPC providers
+- Keeper signer wallet for transaction execution
+
+---
+
+## Project Checklist
+
+- [x] **The protocol** (if applicable):
+   - [ ] has been described and formally specified in a paper.
+   - [ ] has had its main properties mathematically proven.
+   - [ ] has been formally verified.
+- [x] **The smart contracts** (if applicable):
+   - [ ] were thoroughly reviewed by at least two knights of The Stable Order.
+   - [ ] were deployed to: [Add deployment details]
+- [ ] **The mobile app** (if applicable):
+   - [ ] has an _About_ page containing the Stability Nexus's logo and pointing to the social media accounts of the Stability Nexus.
+   - [ ] is available for download as a release in this repo.
+   - [ ] is available in the relevant app stores.
+- [ ] **The AI/ML components** (if applicable):
+   - [ ] LLM/model selection and configuration are documented.
+   - [ ] Prompts and system instructions are version-controlled.
+   - [ ] Content safety and moderation mechanisms are implemented.
+   - [ ] API keys and rate limits are properly managed.
+
+---
+
+## Repository Links
+
+1. [Keeper Template Repository](https://github.com/AOSSIE-Org/Windmill-EVM-Keeper)
+2. [Contracts Repository](https://github.com/AOSSIE-Org/Windmill-EVM-Contracts)
+3. [Web Frontend Repository](https://github.com/AOSSIE-Org/Windmill-EVM-WebFrontend)
+
+---
+
+## Architecture Diagram
 
 ```text
-.
-├── src/
-│   ├── index.js
-│   ├── config.js
-│   ├── keeper-runner.js
-│   ├── logger.js
-│   └── strategies/
-│       ├── index.js
-│       ├── noop.strategy.js
-│       └── contract-task.strategy.js
-├── test/
-├── .env.example
-└── .github/workflows/
++--------------------+
+|  Keeper Scheduler  |
+| (interval / once)  |
++---------+----------+
+          |
+          v
++--------------------+        +-------------------------+
+|  Strategy Selector | -----> | Protocol Strategy Logic |
+| (KEEPER_STRATEGY)  |        | (getWorkItems/execute)  |
++---------+----------+        +------------+------------+
+          |                                |
+          v                                v
++--------------------+             +--------------------+
+|   Ethers Provider  | <---------> |  Target Contract   |
++--------------------+             +--------------------+
 ```
+
+---
+
+## User Flow
+
+```text
+Start keeper -> Load config -> Validate chain -> Detect actionable items ->
+(optional dry-run) -> Execute tx actions -> Wait confirmations -> Repeat
+```
+
+### Key User Journeys
+
+1. **Template Setup**
+   - Copy `.env.example` to `.env`
+   - Choose strategy
+   - Configure RPC and contract values
+
+2. **Local Validation**
+   - Run `npm test`
+   - Run `npm run start:once`
+   - Run `npm run start:dry-run`
+
+3. **Production Loop**
+   - Run `npm run start`
+   - Monitor logs and tx outcomes
+   - Tune cycle interval and action cap
 
 ---
 
@@ -83,127 +168,110 @@ Use this before adding protocol-specific logic. The template gives you a product
 
 - Node.js 20+
 - npm 10+
-- RPC endpoint for your target EVM network
-- Keeper wallet funded with native gas token
+- EVM RPC endpoint
+- Funded keeper wallet private key (for write strategies)
 
-### 1. Install Dependencies
+### Installation
+
+#### 1. Clone the Repository
+
+```bash
+git clone https://github.com/AOSSIE-Org/Windmill-EVM-Keeper.git
+cd Windmill-EVM-Keeper
+```
+
+#### 2. Install Dependencies
 
 ```bash
 npm ci
 ```
 
-### 2. Create Environment File
+#### 3. Configure Environment Variables(.env.example)
 
-```bash
-cp .env.example .env
-```
-
-Then set your RPC endpoint in `.env`:
+Create a `.env` file in the root directory:
 
 ```env
-RPC_URL=https://mainnet.base.org
+KEEPER_STRATEGY=noop
+RPC_URL=
+EXPECTED_CHAIN_ID=
+PRIVATE_KEY=
+CONTRACT_ADDRESS=
+TX_CONFIRMATIONS=1
+MAX_ACTIONS_PER_CYCLE=25
+KEEPER_INTERVAL_MS=15000
+DRY_RUN=false
+LOG_LEVEL=info
 ```
 
-### 3. Select Strategy
+Public free RPC options you can use for `RPC_URL`:
 
-Default strategy is `noop` (safe, no transactions).
+- Base Mainnet (`8453`): `https://mainnet.base.org`
+- Base Sepolia (`84532`): `https://sepolia.base.org`
+- BNB Smart Chain Mainnet (`56`): `https://bsc-dataseed.bnbchain.org`
+- BNB Smart Chain Testnet (`97`): `https://bsc-testnet-dataseed.bnbchain.org`
+- Polygon PoS Mainnet (`137`): `https://polygon-bor-rpc.publicnode.com`
+- Polygon Amoy (`80002`): `https://polygon-amoy-bor-rpc.publicnode.com`
 
-To build a real keeper:
-
-1. Edit `src/strategies/contract-task.strategy.js`
-2. Replace template ABI
-3. Implement:
-   - `getWorkItems(...)`
-   - `executeWorkItem(...)`
-4. Set `KEEPER_STRATEGY=contract-task-template` in `.env`
-
-### 4. Run
+#### 4. Run the Keeper
 
 ```bash
-# one cycle only
+# one cycle
 npm run start:once
 
 # continuous loop
 npm run start
 
-# no transactions, log-only execution
+# no transactions, log-only
 npm run start:dry-run
 ```
 
----
+#### 5. Verify Execution
 
-## Environment Variables
-
-| Variable | Required | Description |
-| --- | --- | --- |
-| `KEEPER_STRATEGY` | No | Strategy key (`noop` or `contract-task-template`) |
-| `RPC_URL` | Yes | EVM JSON-RPC endpoint |
-| `EXPECTED_CHAIN_ID` | No | Safety check against wrong network |
-| `PRIVATE_KEY` | For tx strategies | Keeper signer private key |
-| `CONTRACT_ADDRESS` | For contract strategies | Target contract address |
-| `TX_CONFIRMATIONS` | No | Required confirmations per transaction (default `1`) |
-| `MAX_ACTIONS_PER_CYCLE` | No | Per-cycle execution cap (default `25`) |
-| `KEEPER_INTERVAL_MS` | No | Poll interval in milliseconds (default `15000`) |
-| `DRY_RUN` | No | `true` to skip tx submission |
-| `LOG_LEVEL` | No | `debug`, `info`, `warn`, `error` |
+Check terminal logs for:
+- network and signer initialization
+- detected work items
+- executed transactions (or dry-run actions)
 
 ---
 
-## Public Free RPC Endpoints
+## App Screenshots
 
-Use these public endpoints as starter options for local development and testing. For production keepers, use your own provider with SLA and monitoring.
+Keeper runtime log examples (replace with actual screenshots or terminal captures):
 
-| Network | Chain ID | Public RPC |
-| --- | --- | --- |
-| Base Mainnet | `8453` | `https://mainnet.base.org` |
-| Base Sepolia | `84532` | `https://sepolia.base.org` |
-| BNB Smart Chain Mainnet | `56` | `https://bsc-dataseed.bnbchain.org` |
-| BNB Smart Chain Testnet | `97` | `https://bsc-testnet-dataseed.bnbchain.org` |
-| Polygon PoS Mainnet | `137` | `https://polygon-bor-rpc.publicnode.com` |
-| Polygon Amoy | `80002` | `https://polygon-amoy-bor-rpc.publicnode.com` |
-
----
-
-## Keeper Design Guidelines
-
-When adapting this template for a project keeper:
-
-1. Keep the runner generic. Put protocol logic only inside strategy modules.
-2. Make `getWorkItems()` deterministic and cheap (view calls only).
-3. Make `executeWorkItem()` idempotent when possible.
-4. Keep `MAX_ACTIONS_PER_CYCLE` conservative to avoid gas spikes.
-5. Add tests for selection logic and failure paths before shipping.
-6. Start with `DRY_RUN=true` in staging or testnet.
-
----
-
-## CI and Automation
-
-The template includes:
-
-- `ci.yml`: install + test on pushes and PRs
-- `security-audit.yml`: dependency review and npm audit
-- `release-artifacts.yml`: tag-based artifact packaging
-
----
-
-## Versioning
-
-- Use semantic versioning in `VERSION`
-- Create tags like `v1.2.3` for release artifact publishing
+|  |  |  |
+|---|---|---|
+| Startup logs | Dry-run cycle logs | Transaction execution logs |
 
 ---
 
 ## Contributing
 
-Please read [CONTRIBUTING.md](./CONTRIBUTING.md) before opening a PR.
+Don't forget to star this repository if you find it useful.
+
+Thank you for considering contributing to this project! Contributions are highly appreciated and welcomed. To ensure smooth collaboration, please refer to our [Contribution Guidelines](./CONTRIBUTING.md).
+
+---
+
+## Maintainers
+
+TODO: Add maintainer information
+
+- [Maintainer Name](https://github.com/username)
+- [Maintainer Name](https://github.com/username)
 
 ---
 
 ## License
 
-This project is licensed under GNU GPL v3.0. See [LICENSE](LICENSE).
+This project is licensed under the GNU General Public License v3.0.
+See the [LICENSE](LICENSE) file for details.
 
 ---
 
-© 2026 The Stable Order.
+## Thanks To All Contributors
+
+Thanks a lot for spending your time helping TODO grow. Keep rocking.
+
+[![Contributors](https://contrib.rocks/image?repo=AOSSIE-Org/Windmill-EVM-Keeper)](https://github.com/AOSSIE-Org/Windmill-EVM-Keeper/graphs/contributors)
+
+© 2025 AOSSIE
