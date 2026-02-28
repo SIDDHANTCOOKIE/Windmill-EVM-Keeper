@@ -12,8 +12,10 @@ export class Keeper {
 
   public async start(): Promise<void> {
     console.log(" Keeper started...");
-    console.log("Connected wallet:", this.wallet.address);
-
+    // Mask the address: show only first 6 and last 4 characters
+    const maskedAddress = `${this.wallet.address.substring(0, 6)}...${this.wallet.address.substring(38)}`;
+    console.log("Connected wallet:", maskedAddress);
+    
     while (true) {
       try {
         await this.check();
