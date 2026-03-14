@@ -1,0 +1,23 @@
+{
+  "name": "windmill-evm-keeper",
+  "version": "0.1.0",
+  "description": "Minimal EVM Keeper scaffold for Windmill",
+  "main": "dist/index.js",
+  "scripts": {
+    "build": "tsc",
+    "start": "node dist/index.js",
+    "dev": "ts-node src/index.ts"
+  },
+  "keywords": ["evm", "keeper", "blockchain", "automation"],
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "dotenv": "^16.4.5",
+    "ethers": "^6.11.1"
+  },
+  "devDependencies": {
+    "@types/node": "^20.11.30",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.4.2"
+  }
+}
