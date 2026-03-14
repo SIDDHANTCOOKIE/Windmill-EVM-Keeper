@@ -3,7 +3,7 @@
 
 <!-- Organization Logo -->
 <div align="center" style="display: flex; align-items: center; justify-content: center; gap: 16px;">
-  <img alt="AOSSIE" src="public/aossie-logo.svg" width="175">
+  <img alt="Stability Nexus" src="public/stability.svg" width="175">
   <img src="public/todo-project-logo.svg" width="175" />
 </div>
 
@@ -12,7 +12,7 @@
 <!-- Organization Name -->
 <div align="center">
 
-[![Static Badge](https://img.shields.io/badge/aossie.org/TODO-228B22?style=for-the-badge&labelColor=FFC517)](https://TODO.aossie.org/)
+[![Static Badge](https://img.shields.io/badge/Stability_Nexus-/TODO-228B22?style=for-the-badge&labelColor=FFC517)](https://TODO.stability.nexus/)
 
 <!-- Correct deployed url to be added -->
 
@@ -48,10 +48,10 @@
 ---
 
 <div align="center">
-<h1>Windmill EVM Keeper Template</h1>
+<h1>TODO: Project Name</h1>
 </div>
 
-[Windmill EVM Keeper Template](https://TODO.stability.nexus/) is a reusable Node.js template for building EVM keeper bots that monitor protocol state and execute automated maintenance transactions safely.
+[TODO](https://TODO.stability.nexus/) is a reusable Node.js template for building EVM keeper bots that monitor protocol state and execute automated maintenance transactions safely.
 
 ---
 
@@ -108,9 +108,9 @@
 
 ## Repository Links
 
-1. [Keeper Template Repository](https://github.com/AOSSIE-Org/Windmill-EVM-Keeper)
-2. [Contracts Repository](https://github.com/AOSSIE-Org/Windmill-EVM-Contracts)
-3. [Web Frontend Repository](https://github.com/AOSSIE-Org/Windmill-EVM-WebFrontend)
+1. [Main Repository](https://github.com/StabilityNexus/Template-Repo-EVM-Keeper)
+2. [Frontend](https://github.com/AOSSIE-Org/TODO/tree/main/frontend) (if separate)
+3. [Backend](https://github.com/AOSSIE-Org/TODO/tree/main/backend) (if separate)
 
 ---
 
@@ -176,8 +176,8 @@ Start keeper -> Load config -> Validate chain -> Detect actionable items ->
 #### 1. Clone the Repository
 
 ```bash
-git clone https://github.com/AOSSIE-Org/Windmill-EVM-Keeper.git
-cd Windmill-EVM-Keeper
+git clone https://github.com/StabilityNexus/Template-Repo-EVM-Keeper.git
+cd Template-Repo-EVM-Keeper
 ```
 
 #### 2. Install Dependencies
@@ -272,6 +272,6 @@ See the [LICENSE](LICENSE) file for details.
 
 Thanks a lot for spending your time helping TODO grow. Keep rocking.
 
-[![Contributors](https://contrib.rocks/image?repo=AOSSIE-Org/Windmill-EVM-Keeper)](https://github.com/AOSSIE-Org/Windmill-EVM-Keeper/graphs/contributors)
+[![Contributors](https://contrib.rocks/image?repo=StabilityNexus/Template-Repo-EVM-Keeper)](https://github.com/StabilityNexus/Template-Repo-EVM-Keeper/graphs/contributors)
 
 © 2025 AOSSIE
