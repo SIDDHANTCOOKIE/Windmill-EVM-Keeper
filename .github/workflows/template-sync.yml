@@ -8,7 +8,7 @@ on:
 jobs:
   repo-sync:
     runs-on: ubuntu-latest
-    if: github.repository != 'AOSSIE-Org/Template-Repo'
+    if: github.repository != 'StabilityNexus/TODO-EVM-Keeper'
     # https://docs.github.com/en/actions/using-jobs/assigning-permissions-to-jobs
     permissions:
       contents: write
@@ -26,7 +26,7 @@ jobs:
       - name: actions-template-sync
         uses: AndreasAugustin/actions-template-sync@v2
         with:
-          source_repo_path: AOSSIE-Org/Template-Repo
+          source_repo_path: StabilityNexus/TODO-EVM-Keeper
           upstream_branch: main # defaults to main
           pr_labels: template_sync,auto_pr # defaults to template_sync
           source_gh_token: ${{ secrets.GITHUB_TOKEN }}

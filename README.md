@@ -25,24 +25,24 @@
 <img src="https://img.shields.io/badge/Telegram-black?style=flat&logo=telegram&logoColor=white&logoSize=auto&color=24A1DE" alt="Telegram Badge"/></a>
 &nbsp;&nbsp;
 <!-- X (formerly Twitter) -->
-<a href="https://x.com/aossie_org">
-<img src="https://img.shields.io/twitter/follow/aossie_org" alt="X (formerly Twitter) Badge"/></a>
+<a href="https://x.com/StabilityNexus">
+<img src="https://img.shields.io/twitter/follow/StabilityNexus" alt="X (formerly Twitter) Badge"/></a>
 &nbsp;&nbsp;
 <!-- Discord -->
-<a href="https://discord.gg/hjUhu33uAn">
-<img src="https://img.shields.io/discord/1022871757289422898?style=flat&logo=discord&logoColor=white&logoSize=auto&label=Discord&labelColor=5865F2&color=57F287" alt="Discord Badge"/></a>
+<a href="https://discord.gg/YzDKeEfWtS">
+<img src="https://img.shields.io/discord/995968619034984528?style=flat&logo=discord&logoColor=white&logoSize=auto&label=Discord&labelColor=5865F2&color=57F287" alt="Discord Badge"/></a>
 &nbsp;&nbsp;
 <!-- Medium -->
 <a href="https://news.stability.nexus/">
   <img src="https://img.shields.io/badge/Medium-black?style=flat&logo=medium&logoColor=black&logoSize=auto&color=white" alt="Medium Badge"></a>
 &nbsp;&nbsp;
 <!-- LinkedIn -->
-<a href="https://www.linkedin.com/company/aossie/">
+<a href="https://www.linkedin.com/company/stability-nexus/">
   <img src="https://img.shields.io/badge/LinkedIn-black?style=flat&logo=LinkedIn&logoColor=white&logoSize=auto&color=0A66C2" alt="LinkedIn Badge"></a>
 &nbsp;&nbsp;
 <!-- Youtube -->
-<a href="https://www.youtube.com/@AOSSIE-Org">
-  <img src="https://img.shields.io/youtube/channel/subscribers/UCKVVLbawY7Gej_3o2WKsoiA?style=flat&logo=youtube&logoColor=white%20&logoSize=auto&labelColor=FF0000&color=FF0000" alt="Youtube Badge"></a>
+<a href="https://www.youtube.com/@StabilityNexus">
+  <img src="https://img.shields.io/youtube/channel/subscribers/UCZOG4YhFQdlGaLugr_e5BKw?style=flat&logo=youtube&logoColor=white%20&logoSize=auto&labelColor=FF0000&color=FF0000" alt="Youtube Badge"></a>
 </p>
 
 ---
@@ -108,9 +108,9 @@
 
 ## Repository Links
 
-1. [Main Repository](https://github.com/StabilityNexus/Template-Repo-EVM-Keeper)
-2. [Frontend](https://github.com/AOSSIE-Org/TODO/tree/main/frontend) (if separate)
-3. [Backend](https://github.com/AOSSIE-Org/TODO/tree/main/backend) (if separate)
+1. [Main Repository](https://github.com/StabilityNexus/TODO-EVM-Keeper)
+2. [Frontend](https://github.com/StabilityNexus/TODO/tree/main/frontend) (if separate)
+3. [Backend](https://github.com/StabilityNexus/TODO/tree/main/backend) (if separate)
 
 ---
 
@@ -176,8 +176,8 @@ Start keeper -> Load config -> Validate chain -> Detect actionable items ->
 #### 1. Clone the Repository
 
 ```bash
-git clone https://github.com/StabilityNexus/Template-Repo-EVM-Keeper.git
-cd Template-Repo-EVM-Keeper
+git clone https://github.com/StabilityNexus/TODO-EVM-Keeper.git
+cd TODO-EVM-Keeper
 ```
 
 #### 2. Install Dependencies
@@ -272,6 +272,6 @@ See the [LICENSE](LICENSE) file for details.
 
 Thanks a lot for spending your time helping TODO grow. Keep rocking.
 
-[![Contributors](https://contrib.rocks/image?repo=StabilityNexus/Template-Repo-EVM-Keeper)](https://github.com/StabilityNexus/Template-Repo-EVM-Keeper/graphs/contributors)
+[![Contributors](https://contrib.rocks/image?repo=StabilityNexus/TODO-EVM-Keeper)](https://github.com/StabilityNexus/TODO-EVM-Keeper/graphs/contributors)
 
-© 2025 AOSSIE
+© 2025 Stability Nexus

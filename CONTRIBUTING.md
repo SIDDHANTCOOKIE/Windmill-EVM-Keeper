@@ -81,13 +81,13 @@ What we expect:
 
 2. **Clone Your Fork**
    ```bash
-   git clone https://github.com/YOUR_USERNAME/Template-Repo-EVM-Keeper.git
-   cd Template-Repo-EVM-Keeper
+   git clone https://github.com/YOUR_USERNAME/TODO-EVM-Keeper.git
+   cd TODO-EVM-Keeper
    ```
 
 3. **Add Upstream Remote**
    ```bash
-   git remote add upstream https://github.com/StabilityNexus/Template-Repo-EVM-Keeper.git
+   git remote add upstream https://github.com/StabilityNexus/TODO-EVM-Keeper.git
    ```
 
 4. **Install Dependencies**
