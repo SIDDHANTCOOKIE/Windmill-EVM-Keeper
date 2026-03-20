@@ -1,9 +1,9 @@
-<!-- Don't delete it -->
+﻿<!-- Don't delete it -->
 <div name="readme-top"></div>
 
 <!-- Organization Logo -->
 <div align="center" style="display: flex; align-items: center; justify-content: center; gap: 16px;">
-  <img alt="AOSSIE" src="public/aossie-logo.svg" width="175">
+  <img alt="Stability Nexus" src="public/stability.svg" width="175">
   <img src="public/todo-project-logo.svg" width="175" />
 </div>
 
@@ -12,7 +12,7 @@
 <!-- Organization Name -->
 <div align="center">
 
-[![Static Badge](https://img.shields.io/badge/aossie.org/TODO-228B22?style=for-the-badge&labelColor=FFC517)](https://TODO.aossie.org/)
+[![Static Badge](https://img.shields.io/badge/Stability_Nexus-/TODO-228B22?style=for-the-badge&labelColor=FFC517)](https://TODO.stability.nexus/)
 
 <!-- Correct deployed url to be added -->
 
@@ -25,24 +25,24 @@
 <img src="https://img.shields.io/badge/Telegram-black?style=flat&logo=telegram&logoColor=white&logoSize=auto&color=24A1DE" alt="Telegram Badge"/></a>
 &nbsp;&nbsp;
 <!-- X (formerly Twitter) -->
-<a href="https://x.com/aossie_org">
-<img src="https://img.shields.io/twitter/follow/aossie_org" alt="X (formerly Twitter) Badge"/></a>
+<a href="https://x.com/StabilityNexus">
+<img src="https://img.shields.io/twitter/follow/StabilityNexus" alt="X (formerly Twitter) Badge"/></a>
 &nbsp;&nbsp;
 <!-- Discord -->
-<a href="https://discord.gg/hjUhu33uAn">
-<img src="https://img.shields.io/discord/1022871757289422898?style=flat&logo=discord&logoColor=white&logoSize=auto&label=Discord&labelColor=5865F2&color=57F287" alt="Discord Badge"/></a>
+<a href="https://discord.gg/YzDKeEfWtS">
+<img src="https://img.shields.io/discord/995968619034984528?style=flat&logo=discord&logoColor=white&logoSize=auto&label=Discord&labelColor=5865F2&color=57F287" alt="Discord Badge"/></a>
 &nbsp;&nbsp;
 <!-- Medium -->
 <a href="https://news.stability.nexus/">
   <img src="https://img.shields.io/badge/Medium-black?style=flat&logo=medium&logoColor=black&logoSize=auto&color=white" alt="Medium Badge"></a>
 &nbsp;&nbsp;
 <!-- LinkedIn -->
-<a href="https://www.linkedin.com/company/aossie/">
+<a href="https://www.linkedin.com/company/stability-nexus/">
   <img src="https://img.shields.io/badge/LinkedIn-black?style=flat&logo=LinkedIn&logoColor=white&logoSize=auto&color=0A66C2" alt="LinkedIn Badge"></a>
 &nbsp;&nbsp;
 <!-- Youtube -->
-<a href="https://www.youtube.com/@AOSSIE-Org">
-  <img src="https://img.shields.io/youtube/channel/subscribers/UCKVVLbawY7Gej_3o2WKsoiA?style=flat&logo=youtube&logoColor=white%20&logoSize=auto&labelColor=FF0000&color=FF0000" alt="Youtube Badge"></a>
+<a href="https://www.youtube.com/@StabilityNexus">
+  <img src="https://img.shields.io/youtube/channel/subscribers/UCZOG4YhFQdlGaLugr_e5BKw?style=flat&logo=youtube&logoColor=white%20&logoSize=auto&labelColor=FF0000&color=FF0000" alt="Youtube Badge"></a>
 </p>
 
 ---
@@ -51,57 +51,47 @@
 <h1>TODO: Project Name</h1>
 </div>
 
-[TODO](https://TODO.stability.nexus/) is a ... TODO: Project Description.
+[TODO](https://TODO.stability.nexus/) is a reusable Node.js template for building EVM keeper bots that monitor protocol state and execute automated maintenance transactions safely.
 
 ---
 
-## 🚀 Features
+## Features
 
-TODO: List your main features here:
-
-- **Feature 1**: Description
-- **Feature 2**: Description
-- **Feature 3**: Description
-- **Feature 4**: Description
+- **Strategy-based keeper core**: Keep protocol-specific logic isolated in `src/strategies/`.
+- **Safe execution controls**: `DRY_RUN`, `MAX_ACTIONS_PER_CYCLE`, `EXPECTED_CHAIN_ID`, and confirmation controls.
+- **Production-friendly runtime**: Graceful loop execution, robust error handling, and structured logs.
+- **CI-ready template**: Unit tests, CI workflow, security audit workflow, and release artifact workflow included.
 
 ---
 
-## 💻 Tech Stack
-
-TODO: Update based on your project
+## Tech Stack
 
 ### Frontend
-- React / Next.js / Flutter / React Native
-- TypeScript
-- TailwindCSS
+- N/A (headless keeper service)
 
 ### Backend
-- Flask / FastAPI / Node.js / Supabase
-- Database: PostgreSQL / SQLite / MongoDB
+- Node.js 20+
+- JavaScript (ESM)
+- Ethers.js v6
+- dotenv
 
 ### AI/ML (if applicable)
-- LangChain / LangGraph / LlamaIndex
-- Google Gemini / OpenAI / Anthropic Claude
-- Vector Database: Weaviate / Pinecone / Chroma
-- RAG / Prompt Engineering / Agent Frameworks
+- N/A
 
 ### Blockchain (if applicable)
-- Solidity / solana / cardano / ergo Smart Contracts
-- Hardhat / Truffle / foundry
-- Web3.js / Ethers.js / Wagmi
-- OpenZeppelin / alchemy / Infura
+- EVM-compatible networks
+- JSON-RPC providers
+- Keeper signer wallet for transaction execution
 
 ---
 
-## ✅ Project Checklist
+## Project Checklist
 
-TODO: Complete applicable items based on your project type
-
-- [ ] **The protocol** (if applicable):
+- [x] **The protocol** (if applicable):
    - [ ] has been described and formally specified in a paper.
    - [ ] has had its main properties mathematically proven.
    - [ ] has been formally verified.
-- [ ] **The smart contracts** (if applicable):
+- [x] **The smart contracts** (if applicable):
    - [ ] were thoroughly reviewed by at least two knights of The Stable Order.
    - [ ] were deployed to: [Add deployment details]
 - [ ] **The mobile app** (if applicable):
@@ -116,97 +106,84 @@ TODO: Complete applicable items based on your project type
 
 ---
 
-## 🔗 Repository Links
+## Repository Links
 
-TODO: Update with your repository structure
-
-1. [Main Repository](https://github.com/AOSSIE-Org/TODO)
-2. [Frontend](https://github.com/AOSSIE-Org/TODO/tree/main/frontend) (if separate)
-3. [Backend](https://github.com/AOSSIE-Org/TODO/tree/main/backend) (if separate)
+1. [Main Repository](https://github.com/StabilityNexus/TODO-EVM-Keeper)
+2. [Frontend](https://github.com/StabilityNexus/TODO/tree/main/frontend) (if separate)
+3. [Backend](https://github.com/StabilityNexus/TODO/tree/main/backend) (if separate)
 
 ---
 
-## 🏗️ Architecture Diagram
+## Architecture Diagram
 
-TODO: Add your system architecture diagram here
-
+```text
++--------------------+
+|  Keeper Scheduler  |
+| (interval / once)  |
++---------+----------+
+          |
+          v
++--------------------+        +-------------------------+
+|  Strategy Selector | -----> | Protocol Strategy Logic |
+| (KEEPER_STRATEGY)  |        | (getWorkItems/execute)  |
++---------+----------+        +------------+------------+
+          |                                |
+          v                                v
++--------------------+             +--------------------+
+|   Ethers Provider  | <---------> |  Target Contract   |
++--------------------+             +--------------------+
 ```
-[Architecture Diagram Placeholder]
-```
-
-You can create architecture diagrams using:
-- [Draw.io](https://draw.io)
-- [Excalidraw](https://excalidraw.com)
-- [Lucidchart](https://lucidchart.com)
-- [Mermaid](https://mermaid.js.org) (for code-based diagrams)
-
-Example structure to include:
-- Frontend components
-- Backend services
-- Database architecture
-- External APIs/services
-- Data flow between components
 
 ---
 
-## 🔄 User Flow
+## User Flow
 
-TODO: Add user flow diagrams showing how users interact with your application
-
-```
-[User Flow Diagram Placeholder]
+```text
+Start keeper -> Load config -> Validate chain -> Detect actionable items ->
+(optional dry-run) -> Execute tx actions -> Wait confirmations -> Repeat
 ```
 
 ### Key User Journeys
 
-TODO: Document main user flows:
+1. **Template Setup**
+   - Copy `.env.example` to `.env`
+   - Choose strategy
+   - Configure RPC and contract values
 
-1. **User Journey 1**: Description
-   - Step 1
-   - Step 2
-   - Step 3
+2. **Local Validation**
+   - Run `npm test`
+   - Run `npm run start:once`
+   - Run `npm run start:dry-run`
 
-2. **User Journey 2**: Description
-   - Step 1
-   - Step 2
-   - Step 3
-
-3. **User Journey 3**: Description
-   - Step 1
-   - Step 2
-   - Step 3
+3. **Production Loop**
+   - Run `npm run start`
+   - Monitor logs and tx outcomes
+   - Tune cycle interval and action cap
 
 ---
 
-## �🍀 Getting Started
+## Getting Started
 
 ### Prerequisites
 
-TODO: List what developers need installed
-
-- Node.js 18+ / Python 3.9+ / Flutter SDK
-- npm / yarn / pnpm
-- [Any specific tools or accounts needed]
+- Node.js 20+
+- npm 10+
+- EVM RPC endpoint
+- Funded keeper wallet private key (for write strategies)
 
 ### Installation
-
-TODO: Provide detailed setup instructions
 
 #### 1. Clone the Repository
 
 ```bash
-git clone https://github.com/AOSSIE-Org/TODO.git
-cd TODO
+git clone https://github.com/StabilityNexus/TODO-EVM-Keeper.git
+cd TODO-EVM-Keeper
 ```
 
 #### 2. Install Dependencies
 
 ```bash
-npm install
-# or
-yarn install
-# or
-pnpm install
+npm ci
 ```
 
 #### 3. Configure Environment Variables(.env.example)
@@ -214,48 +191,68 @@ pnpm install
 Create a `.env` file in the root directory:
 
 ```env
-# Add your environment variables here
-API_KEY=your_api_key
-DATABASE_URL=your_database_url
+KEEPER_STRATEGY=noop
+RPC_URL=
+EXPECTED_CHAIN_ID=
+PRIVATE_KEY=
+CONTRACT_ADDRESS=
+TX_CONFIRMATIONS=1
+MAX_ACTIONS_PER_CYCLE=25
+KEEPER_INTERVAL_MS=15000
+DRY_RUN=false
+LOG_LEVEL=info
 ```
 
-#### 4. Run the Development Server
+Public free RPC options you can use for `RPC_URL`:
+
+- Base Mainnet (`8453`): `https://mainnet.base.org`
+- Base Sepolia (`84532`): `https://sepolia.base.org`
+- BNB Smart Chain Mainnet (`56`): `https://bsc-dataseed.bnbchain.org`
+- BNB Smart Chain Testnet (`97`): `https://bsc-testnet-dataseed.bnbchain.org`
+- Polygon PoS Mainnet (`137`): `https://polygon-bor-rpc.publicnode.com`
+- Polygon Amoy (`80002`): `https://polygon-amoy-bor-rpc.publicnode.com`
+
+#### 4. Run the Keeper
 
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
+# one cycle
+npm run start:once
+
+# continuous loop
+npm run start
+
+# no transactions, log-only
+npm run start:dry-run
 ```
 
-#### 5. Open your Browser
+#### 5. Verify Execution
 
-Navigate to [http://localhost:3000](http://localhost:3000) to see the application.
-
-For detailed setup instructions, please refer to our [Installation Guide](./docs/INSTALL_GUIDE.md) (if you have one).
+Check terminal logs for:
+- network and signer initialization
+- detected work items
+- executed transactions (or dry-run actions)
 
 ---
 
-## 📱 App Screenshots
+## App Screenshots
 
-TODO: Add screenshots showcasing your application
+Keeper runtime log examples (replace with actual screenshots or terminal captures):
 
 |  |  |  |
 |---|---|---|
-| Screenshot 1 | Screenshot 2 | Screenshot 3 |
+| Startup logs | Dry-run cycle logs | Transaction execution logs |
 
 ---
 
-## 🙌 Contributing
+## Contributing
 
-⭐ Don't forget to star this repository if you find it useful! ⭐
+Don't forget to star this repository if you find it useful.
 
 Thank you for considering contributing to this project! Contributions are highly appreciated and welcomed. To ensure smooth collaboration, please refer to our [Contribution Guidelines](./CONTRIBUTING.md).
 
 ---
 
-## ✨ Maintainers
+## Maintainers
 
 TODO: Add maintainer information
 
@@ -264,17 +261,17 @@ TODO: Add maintainer information
 
 ---
 
-## 📍 License
+## License
 
 This project is licensed under the GNU General Public License v3.0.
 See the [LICENSE](LICENSE) file for details.
 
 ---
 
-## 💪 Thanks To All Contributors
+## Thanks To All Contributors
 
-Thanks a lot for spending your time helping TODO grow. Keep rocking 🥂
+Thanks a lot for spending your time helping TODO grow. Keep rocking.
 
-[![Contributors](https://contrib.rocks/image?repo=AOSSIE-Org/TODO)](https://github.com/AOSSIE-Org/TODO/graphs/contributors)
+[![Contributors](https://contrib.rocks/image?repo=StabilityNexus/TODO-EVM-Keeper)](https://github.com/StabilityNexus/TODO-EVM-Keeper/graphs/contributors)
 
-© 2025 AOSSIE 
+© 2025 Stability Nexus

@@ -11,7 +11,7 @@ permissions:
 
 jobs:
   remove-pending-label:
-    if: ${{ github.repository_owner == 'AOSSIE-Org' }}
+    if: ${{ github.repository_owner == 'StabilityNexus' }}
     runs-on: ubuntu-latest
     steps:
       - name: Check if CodeRabbit approved
