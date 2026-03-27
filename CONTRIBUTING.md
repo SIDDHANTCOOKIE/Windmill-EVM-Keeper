@@ -1,4 +1,4 @@
-# Contributing to TODO: Project Name
+# Contributing to EVM Keeper Template
 
 ⭐ First off, thank you for considering contributing to this project! ⭐
 
@@ -68,7 +68,9 @@ What we expect:
 
 ### Prerequisites
 
-TODO: List prerequisites specific to your project
+- Node.js 20+
+- npm 10+
+- Access to an EVM RPC endpoint for local or staging tests
 
 ### Setup
 
@@ -79,13 +81,13 @@ TODO: List prerequisites specific to your project
 
 2. **Clone Your Fork**
    ```bash
-   git clone https://github.com/YOUR_USERNAME/TODO.git
-   cd TODO
+   git clone https://github.com/YOUR_USERNAME/TODO-EVM-Keeper.git
+   cd TODO-EVM-Keeper
    ```
 
 3. **Add Upstream Remote**
    ```bash
-   git remote add upstream https://github.com/AOSSIE-Org/TODO.git
+   git remote add upstream https://github.com/StabilityNexus/TODO-EVM-Keeper.git
    ```
 
 4. **Install Dependencies**
@@ -97,7 +99,8 @@ TODO: List prerequisites specific to your project
 
 5. **Run the Project**
    ```bash
-   npm run dev
+   cp .env.example .env
+   npm run start:once
    ```
 
 ## 🔄 Development Workflow
@@ -121,12 +124,11 @@ git checkout -b fix/your-bug-fix
 
 ### 3. Test Your Changes
 
-TODO: Add project-specific testing instructions
+Before opening a PR, run tests and at least one keeper cycle locally.
 
 ```bash
 npm test
-# or
-npm run lint
+npm run start:once
 ```
 
 ### 4. Commit Your Changes
@@ -223,7 +225,7 @@ Steps to test the changes
 
 ## 📝 Code Style Guidelines
 
-TODO: Add project-specific code style guidelines
+Keep core runner logic protocol-agnostic and place protocol-specific behavior in strategy modules under `src/strategies/`.
 
 ### General Guidelines
 
@@ -238,7 +240,7 @@ TODO: Add project-specific code style guidelines
 - Use ES6+ syntax
 - Prefer `const` over `let`, avoid `var`
 - Use arrow functions where appropriate
-- Follow ESLint rules
+- Keep strategy functions deterministic and fail with clear error messages
 
 ### Python
 - Follow PEP 8 style guide
@@ -538,4 +540,5 @@ If you encounter issues not covered here:
 - Check for existing PRs before starting to avoid duplication, as there might PRs that didn't mention the related issue
 
 
-Thank you for contributing to TODO! Your efforts help make this project better for everyone. 🚀
+Thank you for contributing to the keeper template. Your work helps future protocol keepers ship faster and safer.
+
